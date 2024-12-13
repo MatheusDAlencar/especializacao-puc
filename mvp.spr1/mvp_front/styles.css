@@ -1,0 +1,172 @@
+body,
+ul,
+li {
+    font-family: 'Work Sans', sans-serif;
+    color:rgb(255, 102, 145);
+    text-align: center;
+    justify-content: center
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+header {
+    margin-top: 40vh;
+    background-color:transparent;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+/* Mantive algumas configs que ainda não estou utilizando para não perder o código, porque vou usá-las na evolução, conforme sinalizado no readme.md */
+.title {
+    color: rgb(188, 164, 210);
+    font-weight: bolder;
+    width: 100%;
+    background-color: transparent;
+    display: inline-block;
+    padding: 2px 0px;
+    font-size: 22px;
+    position: sticky;
+    top: 0px;
+}
+
+.banner {
+    height: 300px;
+    overflow: hidden;
+}
+
+.banner img {
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+}
+
+.newLead {
+    background-color:transparent;
+    padding: 30px 40px;
+    color: 1px solid rgb(45, 32, 56);
+    display: flex;
+    justify-content: center;
+}
+
+.newLead:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.newButton {
+    margin-bottom: 1vh;
+    background-color:transparent;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+}
+
+#newInput {
+    margin: 0;
+    border: 1px solid rgb(255, 102, 145);
+    width: 15%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#newQuantity {
+    margin: 0;
+    border: 1px solid rgb(255, 102, 145);
+    width: 5%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#newGender {
+    margin: 0;
+    border: 1px solid rgb(255, 102, 145);
+    width: 8%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#newCity {
+    margin: 0;
+    border: 1px solid rgb(255, 102, 145);
+    width: 15%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#newForm {
+    margin: 0;
+    border: 1px solid rgb(255, 102, 145);
+    width: 8%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#newCourse {
+    margin: 0;
+    border: 1px solid rgb(255, 102, 145);
+    width: 8%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.addBtn {
+    padding: 9px 10px;
+    background-color: transparent;
+    color:rgb(188, 164, 210);
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 2px;
+}
+
+.addBtn:hover {
+    background-color:rgb(255, 33, 107);
+    color: rgb(45, 32, 56);
+}
+
+.leads {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.close:hover {
+    color:rgb(255, 102, 145);
+    font-weight: bolder;
+}
+
+table,
+th,
+td {
+    border: 1px solid rgb(45, 32, 56);
+    border-collapse: collapse;
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 10px;
+    font-size: 18px;
+    transition: 0.2s;
+    color: rgb(45, 32, 56)
+    text-align: start;
+}
+
+table{
+    background-color:rgb(45, 32, 56);
+    width: 50%;
+}
+
+tr:nth-child(odd){
+    background-color:rgb(45, 32, 56);
+}
+
+th:nth-child(1){
+    width: 80%;
+}
+
+tr:hover {
+    background: rgb(154, 121, 191);
+}
