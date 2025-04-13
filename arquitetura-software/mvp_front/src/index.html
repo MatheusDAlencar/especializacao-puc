@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Projeto Direito no Controle</title>
+</head>
+  
+<body>
+    <header style="background-image: url('img/DIREITO_LOGO_claro-h.png'); 
+             background-repeat: no-repeat; 
+             background-size: 28%;
+             background-position: center">
+<!-- Optei por usar imagem como background cover para a página começar com a logo da empresa-->
+    </header>
+
+    <section class="apresentacao">
+        <div class="contentBox">
+            <h2 class="heading">Você no controle!</h2>
+            <p class="text">
+                Olá! Nós somos a Direito no Controle, uma empresa do ramo educacional formada
+                por doutores em direito que utilizam jogos eletrônicos para ensinar o conteúdo
+                jurídico.
+            </p>
+            <p class="text">
+                Nossa missão é utilizar o potencial dos jogos de trazer elementos visuais,
+                auditivos, sinestésicos e digitais para recriar casos reais e clássicos
+                que permitem o ensino de cada matéria e conteúdo jurídico.
+            </p>
+            <br></br>
+            <h2 class="heading">Tudo pelo seu aprendizado!</h2>
+            <p class="text">
+                Conforme demonstram as evidências científicas, o aprendizado de qualquer pessoa
+                só atinge seu máximo potencial quando são utilizadas várias formas de aprendizado,
+                em especial a junção de elementos visuais, auditivos, sinestésicos e de leitura. 
+            </p>
+            <p class="text">
+                Aí entra a magia dos jogos: eles permitem a incorporação de todos esses elementos
+                às explicações, que passam a ser tão teóricas quanto práticas, analisando os casos
+                enquanto vemos sua ocorrência (virtual) nos jogos.
+            </p>
+            <br></br>
+            <p class="title">
+                Gostou? Que tal dar uma olhada nos nossos cursos e produtos?
+            </p>
+            <br></br>
+    </section>
+             <!-- Tabela com items existentes -->
+    <section id="products-list">
+    </section>
+    <section>
+                    <p class="title">
+                Tem mais! Inscreva-se abaixo para receber mais informações e material gratuito
+                fornecido pelos nossos professores.
+            </p>
+    </section>
+
+    <section class="newLead">
+        <input type="text" id="newInput" placeholder="Nome:">
+        <input type="text" id="newQuantity" placeholder="Idade:">
+        <input type="text" id="newGender" placeholder="Gênero:">
+        <input type="text" id="newCity" placeholder="Cidade de Residência">
+        <input type="text" id="newForm" placeholder="Grau de formação">
+        <input type="text" id="newCourse" placeholder="Curso de formação">
+
+        <button onclick="newLead()" class="addBtn">Cadastrar</button>
+    </section>
+
+    <!-- Tabela com leads existentes -->
+    <section class="leads">
+        <table id="myTable">
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Gênero</th>
+                <th>Cidade de Residência</th>
+                <th>Grau de formação</th>
+                <th>Curso de formação</th>
+                <th>Editar</th>
+                <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" \
+                width="15px" height="15px"></th>
+            </tr>
+        </table>
+    </section>
+
+    <br></br>
+
+    <!-- Botão para pegar a lista de todos os existentes. Queria ter implementado agora,
+    mas sem login não faz sentido. Atualmente, não é necessário porque o get traz tudo
+    por default no js. De todo modo, deixei o botão para que eu possa usá-lo quando
+    tiver a autenticação e a distinção entre usuários e administradores.
+    <section class="newButton">
+        <button onclick="getList()" class="addBtn">Clique aqui para acessar a lista completa</button>
+    </section>
+    -->
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
+
+
