@@ -1,0 +1,12 @@
+Flask
+Flask-Cors
+waitress
+python-multipart
+scikit-learn
+joblib
+pandas
+pdf2image
+Pillow
+pytesseract
+scipy
+pytest

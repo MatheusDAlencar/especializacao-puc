@@ -1,0 +1,79 @@
+
+body {
+    background-color: #000000;
+    color: #E0E0E0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h1 {
+    color: #66FF66; /* Verde claro */
+    font-weight: 300;
+}
+
+#upload-area {
+    background-color: #333333; /* Cinza escuro */
+    border: 2px dashed #555555;
+    border-radius: 10px;
+    padding: 40px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+#upload-area.highlight {
+    background-color: #444444;
+    border-color: #66FF66;
+}
+
+#upload-area p {
+    margin: 0;
+    font-size: 16px;
+    color: #CCCCCC;
+}
+
+#file-link {
+    color: #66B2FF; /* Azul claro */
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#file-input {
+    display: none;
+}
+
+#result-area {
+    margin-top: 30px;
+    font-size: 24px;
+    color: #66FF66;
+    font-weight: bold;
+    height: 30px; /* Altura fixa para evitar que a página pule */
+}
+
+#spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #66FF66;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+    display: none; /* Oculto por padrão */
+    margin: 20px auto 0;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

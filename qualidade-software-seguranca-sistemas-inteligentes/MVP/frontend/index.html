@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificador de Documentos Jurídicos</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Insira um documento para classificação</h1>
+
+        <div id="upload-area">
+            <input type="file" id="file-input" accept=".pdf,.jpg,.jpeg,.png">
+            <p>Arraste e solte o arquivo aqui</p>
+            <p>ou <a href="#" id="file-link">clique para selecionar</a></p>
+        </div>
+
+        <div id="spinner"></div>
+        <div id="result-area"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
